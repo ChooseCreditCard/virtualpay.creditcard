@@ -4,210 +4,272 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>VirtualPay.Creditcard – Virtual Cards & Card-on-File Control</title>
-  <meta name="description"
-        content="VirtualPay.creditcard explains virtual cards, card-on-file, online security and how to use virtual numbers to control subscriptions and merchants." />
+  <title>VirtualPay.Creditcard – Virtual Cards & Wallet-Based Payments Explained</title>
+  <meta name="description" content="Understand how virtual credit cards work, how they protect your real card number, and how wallet-based payments route, tokenise and authenticate transactions." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://virtualpay.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="VirtualPay.Creditcard – Virtual Cards & Online Security" />
-  <meta property="og:description"
-        content="Learn how virtual card numbers work, why they are safer online, and how to use them for subscriptions and one-time payments." />
+  <meta property="og:title" content="VirtualPay.Creditcard – Virtual Cards & Wallet Payments Explained" />
+  <meta property="og:description" content="Learn how virtual cards, tokens and digital wallets secure your payments online and in-app." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://virtualpay.creditcard/" />
-  <meta property="og:image" content="https://virtualpay.creditcard/preview.png" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="/styles.css" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VirtualPay.Creditcard – Virtual Cards & Wallet Payments Explained" />
+  <meta name="twitter:description" content="Independent explanation of virtual card numbers, device tokens and secure digital payments." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config','G-64FE63JQ3H');
+    gtag('config', 'G-64FE63JQ3H');
   </script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body class="bg-slate-950 text-slate-100">
 
-  <!-- HEADER – aligned with the rest of your minisites -->
   <header class="site-header">
     <div class="nav-inner max-w-6xl">
       <div class="brand">
         <div class="cc-logo">CC</div>
         <div class="brand-text">
-          <span class="brand-title">VirtualPay.creditcard</span>
-          <span class="brand-subtitle">Virtual cards · Online safety · Controls</span>
+          <div class="brand-title">VirtualPay.Creditcard</div>
+          <div class="brand-subtitle">Virtual Cards & Wallet-Based Payments</div>
         </div>
       </div>
+
       <nav class="nav-links">
-        <a href="https://fin.creditcard/?utm_source=virtualpay.creditcard&utm_medium=nav&utm_campaign=collection">
-          Collection
-        </a>
-        <a href="https://tech.creditcard/?utm_source=virtualpay.creditcard&utm_medium=nav&utm_campaign=tech">
-          Tech
-        </a>
-        <a href="https://choose.creditcard/?utm_source=virtualpay.creditcard&utm_medium=nav&utm_campaign=choose">
-          Choose
-        </a>
+        <a href="#overview">Overview</a>
+        <a href="#mechanics">How It Works</a>
+        <a href="#compare">Compare</a>
       </nav>
     </div>
   </header>
 
   <main class="cc-page">
-    <p class="cc-breadcrumb">VirtualPay.creditcard · Virtual · Controls · Choose</p>
+
+    <div class="cc-breadcrumb">
+      <a href="https://choose.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=breadcrumb">
+        Home
+      </a>
+      &nbsp;›&nbsp;
+      VirtualPay.Creditcard
+    </div>
 
     <!-- HERO -->
     <section class="hero">
-      <h1>Virtual Cards &amp; Online Safety</h1>
-      <p class="hero-lead">
-        Use virtual numbers to protect your real card and control who can charge you.
-      </p>
-      <a class="cta"
-         href="https://choose.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=virtualpay_top">
-        Compare Cards with Virtual Numbers
-      </a>
-    </section>
-
-    <!-- What is a virtual card -->
-    <section class="section">
-      <h2>What is a virtual credit card?</h2>
-      <p class="small">
-        A virtual card is a card number generated in your app or online banking,
-        usually linked to your main account or card, but with its own number, expiry and rules.
-      </p>
-      <ul class="list">
-        <li>Different number than your plastic card</li>
-        <li>Can be limited to a single merchant or purchase</li>
-        <li>Easy to freeze or delete without replacing your main card</li>
-        <li>Ideal for online shopping and subscriptions</li>
-      </ul>
-    </section>
-
-    <!-- Use cases -->
-    <section class="section">
-      <h2>Typical Virtual Card Use Cases</h2>
-      <div class="cluster-grid">
-        <div class="cluster-card">
-          <h3>One-time purchases</h3>
-          <p class="small">Generate a card number, pay once, then close it.</p>
-        </div>
-        <div class="cluster-card">
-          <h3>Subscriptions</h3>
-          <p class="small">Use separate virtual cards for different services and kill them if needed.</p>
-        </div>
-        <div class="cluster-card">
-          <h3>Trials</h3>
-          <p class="small">Stop unwanted charges after free trials by closing the virtual card.</p>
-        </div>
-        <div class="cluster-card">
-          <h3>Risky merchants</h3>
-          <p class="small">Protect your main card at unfamiliar or low-trust sites.</p>
-        </div>
-        <div class="cluster-card">
-          <h3>Business expenses</h3>
-          <p class="small">Issue virtual cards to employees with their own limits.</p>
-        </div>
-        <div class="cluster-card">
-          <h3>Geo or merchant-limited cards</h3>
-          <p class="small">Advanced issuers let you restrict region or MCC.</p>
-        </div>
+      <div class="hero-content">
+        <h1>How Virtual Cards and Digital Wallet Payments Really Work</h1>
+        <p class="hero-lead">
+          VirtualPay.Creditcard explains how virtual card numbers, device tokens, encrypted credentials and wallet rails
+          keep your real card number hidden while enabling secure online and in-app payments.
+        </p>
+        <a class="cta"
+           href="https://choose.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Compare card technology features
+        </a>
       </div>
     </section>
 
-    <!-- How they work -->
+    <!-- SECTION 1 -->
+    <section id="overview" class="section">
+      <h2>What Is a Virtual Credit Card?</h2>
+      <p>
+        A virtual credit card is a digitally generated card number linked to your real account. It works just like a
+        traditional card at checkout, but the number, expiry and CVC can be different from the physical card in your
+        wallet. This separation makes online transactions safer because merchants never see your real credentials.
+      </p>
+      <p>
+        Some issuers allow one-time virtual numbers, while others generate reusable but controllable versions you can
+        freeze, set spending limits on, or delete without affecting your main card.
+      </p>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section id="mechanics" class="section">
+      <h2>How Wallet-Based Payments Use Tokens</h2>
+      <p>
+        When you add a credit card to a digital wallet like Apple Pay or Google Pay, the wallet does not store the
+        actual card number. Instead, it receives a tokenized version from the network — a unique number that only works
+        from your device, protected behind biometric unlock or PIN.
+      </p>
+      <p>
+        At checkout, the terminal receives a dynamic cryptogram instead of static card data. This prevents the type of
+        breaches that historically exposed large batches of card numbers.
+      </p>
+    </section>
+
+    <!-- SECTION 3 -->
     <section class="section">
-      <h2>How virtual cards work behind the scenes</h2>
+      <h2>Why Virtual Cards Improve Security and Control</h2>
+      <p>
+        Virtual cards are especially valuable for subscriptions, trial offers and unfamiliar online merchants. If a
+        merchant overcharges or attempts recurring billing you didn’t approve, you can disable that specific virtual
+        number without cancelling your entire card.
+      </p>
+      <p>
+        Issuers increasingly pair virtual cards with real-time controls: spending caps, merchant category limits,
+        geographic restrictions and expiry rules. These features reduce fraud exposure and give you far greater control
+        over how your card is used online.
+      </p>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="section">
+      <h2>Digital Wallet Acceptance and Limitations</h2>
+      <p>
+        Digital wallets rely on network support, device compatibility and merchant infrastructure. While in-store
+        contactless coverage is now widespread, some smaller merchants, legacy terminals or unusual merchant categories
+        may fall back to manual entry, where virtual cards become the safer choice.
+      </p>
+      <p>
+        For online purchases, wallets often provide extra security layers such as encrypted tokens, biometric approval
+        and reduced exposure to phishing compared with typing in card numbers manually.
+      </p>
+    </section>
+
+    <!-- TABLE -->
+    <section id="compare" class="section">
+      <h2>Comparing Virtual Card & Wallet Features</h2>
+
       <div class="table-wrap">
         <table class="table">
           <thead>
-          <tr>
-            <th>Layer</th>
-            <th>Role</th>
-          </tr>
+            <tr>
+              <th>Feature</th>
+              <th>What to Look For</th>
+              <th>Why It Matters</th>
+            </tr>
           </thead>
+
           <tbody>
-          <tr>
-            <td>Issuer app</td>
-            <td>Generates and displays the virtual card details.</td>
-          </tr>
-          <tr>
-            <td>Tokenization</td>
-            <td>Virtual number may itself be a token mapped to your real account.</td>
-          </tr>
-          <tr>
-            <td>Limits &amp; rules</td>
-            <td>Spending caps, merchant restrictions, expiry dates.</td>
-          </tr>
-          <tr>
-            <td>Authorisation engine</td>
-            <td>Checks whether a transaction fits the virtual card’s rules.</td>
-          </tr>
-          <tr>
-            <td>Settlement</td>
-            <td>Final charges still land on your main account or statement.</td>
-          </tr>
+            <tr>
+              <td>Tokenization</td>
+              <td>Wallet-issued device tokens instead of PAN exposure</td>
+              <td>Reduces the risk of card data breaches and cloning.</td>
+            </tr>
+            <tr>
+              <td>Virtual Number Controls</td>
+              <td>Freeze, delete, set limits, restrict categories</td>
+              <td>Puts you in charge of each transaction path.</td>
+            </tr>
+            <tr>
+              <td>Merchant Compatibility</td>
+              <td>Support for major wallets & recurring billing</td>
+              <td>Ensures virtual and tokenized payments work everywhere you shop.</td>
+            </tr>
+            <tr>
+              <td>Security Layers</td>
+              <td>Biometrics, OTP, device binding and SCA</td>
+              <td>Determines how protected your card is against unauthorised use.</td>
+            </tr>
+            <tr>
+              <td>Data Privacy</td>
+              <td>Minimal merchant data exposure</td>
+              <td>Keeps your real card number away from online databases.</td>
+            </tr>
           </tbody>
         </table>
       </div>
+
+      <p class="small">
+        For a wider overview of payment technology, visit
+        <a href="https://choose.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          Choose.Creditcard
+        </a>.
+      </p>
     </section>
 
-    <!-- Benefits -->
+    <!-- CLUSTER -->
     <section class="section">
-      <h2>Benefits of VirtualPay-style cards</h2>
-      <ul class="list">
-        <li>Stronger control over who can charge you and when</li>
-        <li>Reduced impact if one merchant is breached</li>
-        <li>Cleaner separation of personal, business and subscriptions</li>
-        <li>Easy to stop specific recurring charges</li>
-        <li>Works well together with mobile wallets and digital cards</li>
-      </ul>
-    </section>
+      <h2>Explore Related Payment Technologies</h2>
 
-    <!-- Cluster links -->
-    <section class="section">
-      <h2>Explore the virtual &amp; digital cluster</h2>
       <div class="cluster-grid">
         <a class="cluster-card"
-           href="https://digi.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=digi">
-          <h3>Digi.creditcard</h3>
-          <p class="small">Digital card basics and wallets.</p>
+           href="https://bitcoinpay.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=cluster_bitcoinpay">
+          <h3>BitcoinPay.Creditcard</h3>
+          <p>How BTC-backed payments settle via card rails.</p>
         </a>
+
         <a class="cluster-card"
-           href="https://digipay.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=digipay">
-          <h3>DigiPay.creditcard</h3>
-          <p class="small">Digital payment flows and gateways.</p>
+           href="https://btcpay.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=cluster_btcpay">
+          <h3>BTCPay.Creditcard</h3>
+          <p>Merchant-side crypto acceptance and routing.</p>
         </a>
+
         <a class="cluster-card"
-           href="https://tokens.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=tokens">
-          <h3>Tokens.creditcard</h3>
-          <p class="small">Tokenization and security behind virtual numbers.</p>
+           href="https://tokens.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=cluster_tokens">
+          <h3>Tokens.Creditcard</h3>
+          <p>Tokenized rewards and digital incentives.</p>
+        </a>
+
+        <a class="cluster-card"
+           href="https://defipay.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=cluster_defipay">
+          <h3>DefiPay.Creditcard</h3>
+          <p>DeFi-linked card programmes and yield routing.</p>
+        </a>
+
+        <a class="cluster-card"
+           href="https://virtualpay.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
+          <h3>VirtualPay.Creditcard</h3>
+          <p>Virtual numbers and wallet-based controls.</p>
         </a>
       </div>
     </section>
 
-    <!-- CTA bottom -->
+    <!-- COLLECTION -->
     <section class="section">
-      <h2>Find a card with strong virtual features</h2>
+      <h2>Part of The CreditCard Collection</h2>
+
       <p class="small">
-        VirtualPay.creditcard explains the concept.<br />
-        To see which cards actually offer virtual numbers, limits and controls:
+        VirtualPay.Creditcard is part of <strong>The CreditCard Collection</strong> — a network of tightly focused
+        microsites operated by ronarn AS. Each spoke covers one concept clearly, then links back to independent
+        comparison tools.
+      </p>
+
+      <p class="small">
+        This page focuses on virtual cards and wallet-based payments. It does not issue cards or provide personal
+        recommendations. It summarises how issuers, networks and wallets describe these features in documentation.
+      </p>
+
+      <!-- TECHNOLOGY HUB SNIPPET -->
+      <div class="hub-link">
+        <a href="https://choose.creditcard/technology/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
+           class="text-sm text-slate-600 hover:text-slate-900">
+          Learn more at the Technology hub
+        </a>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="section">
+      <h2>Ready to Compare Card Technology Features?</h2>
+      <p class="small">
+        Use VirtualPay.Creditcard to understand the fundamentals — then visit the main hub for full comparisons across
+        rewards, travel perks, fees and protections.
       </p>
       <a class="cta"
-         href="https://choose.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=virtualpay_bottom">
-        Compare Cards on Choose.Creditcard
+         href="https://choose.creditcard/?utm_source=virtualpay.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Go to Choose.Creditcard
       </a>
     </section>
+
   </main>
 
-  <!-- MINI FOOTER -->
   <footer class="mini-footer">
-    <p class="mini-footer-main">
-      © 2025 The CreditCard Collection — ronarn AS
-    </p>
+    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
     <p class="mini-footer-contact">
       Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
     </p>
